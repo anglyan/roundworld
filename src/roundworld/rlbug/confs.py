@@ -83,9 +83,10 @@ def create_1target_task(task_number=None):
                 rgb_task.append([i,j,k])
 
     if task_number is None:
-        task_number = np.random.randint(27)
-
-    i, j, k = rgb_task[task_number]
+        random_task_number = np.random.randint(27)
+        i, j, k = rgb_task[random_task_number]
+    else:
+        i, j, k = rgb_task[task_number]
 
     r = c_array[i] + np.random.randint(-10,10)
     g = c_array[j] + np.random.randint(-10,10)
@@ -104,7 +105,10 @@ def create_1target_task(task_number=None):
         "palette" : palette,
         "assets" : assets
     }
-    return conf, task_number
+    if task_number is None:
+        return conf, random_task_number
+    else:
+        return conf
 
 def create_saliency_task():
 

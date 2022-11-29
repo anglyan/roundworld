@@ -16,7 +16,7 @@ class RLBug:
         Base class 
 
     Observation:
-        Type: 64x64x3 np.uint8 numpy array with input field
+        Type: 84x84x3 np.uint8 numpy array with input field
 
     Actions:
         Type: Discrete(5)
