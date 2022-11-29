@@ -2,7 +2,7 @@
 
 This repository describes a lightweight first person point of view environment
 called `roundworld` and the reinforcement learning environment `rlbug`, which
-implements a series of lightweight tasks designed to explore to explore
+implements a series of lightweight tasks designed to explore
 offline and online continual reinforcement learning.
 
 ## About
@@ -26,11 +26,15 @@ This repository contains the following:
     keep the lightweight philosophy. A separate implementation fully
     integrated into `gymnasium` is in the works.
 
+`rlbug` was used as a test bed for the general policy algorithm inspired
+on the architecture of the insect brain. This work was presented at the
+*Offline Reinforcement Learning Workshop* at the
+Neural Information Processing Systems Conference (NeurIPS) 2022.
+
 ## Copyright and license
 
 Copyright © 2020, UChicago Argonne, LLC
 
-roundworld is distributed under the terms of BSD License. See [LICENSE](https://github.com/anglyan/roundworld/main/LICENSE)
+roundworld is distributed under the terms of BSD License. See [LICENSE](https://github.com/anglyan/roundworld/blob/main/LICENSE)
 
-## Citing
 
